@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{BD9D5BFB-930C-4FC8-8734-41B5740EC692}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageAnalyzer.Api", "ImageAnalyzer.Api\ImageAnalyzer.Api.csproj", "{A26EE959-B166-4AEE-9495-C9121222E682}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageAnalyzer.UnitTests", "ImageAnalyzer.UnitTests\ImageAnalyzer.UnitTests.csproj", "{AA78BB42-ECB1-4618-9903-6BBCF93EEF57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A26EE959-B166-4AEE-9495-C9121222E682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26EE959-B166-4AEE-9495-C9121222E682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26EE959-B166-4AEE-9495-C9121222E682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26EE959-B166-4AEE-9495-C9121222E682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA78BB42-ECB1-4618-9903-6BBCF93EEF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA78BB42-ECB1-4618-9903-6BBCF93EEF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA78BB42-ECB1-4618-9903-6BBCF93EEF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA78BB42-ECB1-4618-9903-6BBCF93EEF57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EBD0AFB-29C2-4481-9ADE-0EE8731DFD1C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+using ImageAnalyzer.Api.Api;
+using ImageAnalyzer.Api.Features.Analysis.Requests;
+using ImageAnalyzer.Api.Features.Analysis.Responses;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ImageAnalyzer.Api.Controllers;
+
+[Route("api/[controller]/[action]")]
+[ApiController]
+public class ImageAnalyzerController : AnalyzerControllerBase
+{
+    public ImageAnalyzerController(IMediator mediator)
+        : base(mediator)
+    {
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Response<List<ImageAnalysisResponse>>>> AnalyzeHtml(AnalyzeHtmlRequest request, CancellationToken cancellationToken)
+    {
+        var command = new AnalyzeHtmlCommand.Command { HtmlToAnalize = request.HtmlToAnalize, AnalysisType = request.AnalysisType };
+        var response = await _mediator.Send(command, cancellationToken);
+
+        return HandleResponse(response, "Returned image analysis");
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Response<List<ImageAnalysisResponse>>>> AnalyzeImageList(AnalyzeImageListRequest request, CancellationToken cancellationToken)
+    {
+        var command = new AnalyzeImageListCommand.Command { ImageUrls = request.ImageUrls, AnalysisType = request.AnalysisType };
+        var response = await _mediator.Send(command, cancellationToken);
+
+        return HandleResponse(response, "Returned image analysis");
+    }
+}
