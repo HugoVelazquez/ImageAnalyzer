@@ -11,11 +11,8 @@ on:
 
 jobs:
   build:
-    name: Build and Test Master
+
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dotnet-version: ['7.0.x']
 
     steps:
     - uses: actions/checkout@v3
@@ -28,7 +25,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj'
     - name: Build
-      run: dotnet build 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj' configuration Release --no-restore
+      run: dotnet build 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj' --no-restore
     - name: Test
       run: dotnet test 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj' --no-build --verbosity normal
     - name: Publish
