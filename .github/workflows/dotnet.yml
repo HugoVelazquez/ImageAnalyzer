@@ -48,7 +48,7 @@ jobs:
       matrix:
         dotnet-version: ['7.0.x']
     steps:
-      - uses: actions/upload-artifact@v3
+      - uses: actions/download-artifact@v3
         with: 
           name: upload-file-artifact
 
