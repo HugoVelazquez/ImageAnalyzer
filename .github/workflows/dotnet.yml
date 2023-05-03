@@ -63,8 +63,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: imageAnalyzer-api
-          environment_name: dev-v2
+          application_name: ImageAnalyzer-api
+          environment_name: dev-environment
           region: us-east-1
           version_label: ${{ github.run_id }}
           version_description: ${{ github.sha }}
