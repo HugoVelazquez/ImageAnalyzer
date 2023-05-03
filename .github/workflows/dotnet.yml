@@ -11,8 +11,11 @@ on:
 
 jobs:
   build:
-
+    name: Build and Test Master
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['7.0.x']
 
     steps:
     - uses: actions/checkout@v3
@@ -23,8 +26,10 @@ jobs:
     - name: Verify code format
       run: dotnet format --verify-no-changes
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj'
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj' configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj' --no-build --verbosity normal
+    - name: Publish
+      run: dotnet publish 'ImageAnalyzer.Api/ImageAnalyzer.Api.csproj' --configuration Release -o '${{ github.workspace }}/out' -r linux-x64 --self-contained false
