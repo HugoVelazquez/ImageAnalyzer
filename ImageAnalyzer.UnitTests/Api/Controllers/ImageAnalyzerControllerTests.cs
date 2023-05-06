@@ -1,7 +1,4 @@
-﻿using ImageAnalyzer.Api.Api;
-using ImageAnalyzer.Api.Features.Analysis.Responses;
-
-namespace ImageAnalyzer.UnitTests.Api.Controllers;
+﻿namespace ImageAnalyzer.UnitTests.Api.Controllers;
 
 public class ImageAnalyzerControllerTests
 {

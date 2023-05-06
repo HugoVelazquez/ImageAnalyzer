@@ -1,8 +1,6 @@
 ﻿using Amazon;
 using Amazon.Rekognition;
 using Amazon.Runtime;
-using ImageAnalyzer.Api.Configurations.Amazon;
-using ImageAnalyzer.Api.Services.AmazonRekognition.Interfaces;
 
 namespace ImageAnalyzer.Api.Services.AmazonRekognition;
 

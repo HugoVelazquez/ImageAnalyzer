@@ -1,6 +1,4 @@
-﻿using ImageAnalyzer.Api.Services.ImageProcesor.Interfaces;
-
-namespace ImageAnalyzer.Api.Services.ImageProcesor;
+﻿namespace ImageAnalyzer.Api.Services.ImageProcesor;
 public class ImageConfidence : IImageConfidence
 {
     public string? FileName { get; set; }

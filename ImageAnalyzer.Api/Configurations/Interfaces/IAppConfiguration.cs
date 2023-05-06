@@ -1,6 +1,4 @@
-﻿using ImageAnalyzer.Api.Configurations.Amazon;
-
-namespace ImageAnalyzer.Api.Configurations.Interfaces;
+﻿namespace ImageAnalyzer.Api.Configurations.Interfaces;
 
 public interface IAppConfiguration
 {

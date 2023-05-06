@@ -1,7 +1,4 @@
-﻿using ImageAnalyzer.Api.Features.Analysis.Responses;
-using ImageAnalyzer.Api.Services.ImageProcesor.Interfaces;
-
-namespace ImageAnalyzer.Api.Services.ImageProcesor.Extensions;
+﻿namespace ImageAnalyzer.Api.Services.ImageProcesor.Extensions;
 
 public static class ImageConfidenceExtensions
 {

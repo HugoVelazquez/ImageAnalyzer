@@ -1,5 +1,4 @@
-﻿using ImageAnalyzer.Api.Api;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace ImageAnalyzer.Api.Controllers;
 

@@ -1,6 +1,3 @@
-using ImageAnalyzer.Api.Api;
-using ImageAnalyzer.Api.Features.Analysis.Requests;
-using ImageAnalyzer.Api.Features.Analysis.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ImageAnalyzer.Api.Controllers;

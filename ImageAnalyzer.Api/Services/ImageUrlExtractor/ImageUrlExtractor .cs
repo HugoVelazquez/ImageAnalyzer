@@ -1,9 +1,8 @@
-using ImageAnalyzer.Api.Services.ImageUrlExtractor.Interfaces;
 using System.Text.RegularExpressions;
 
 namespace ImageAnalyzer.Api.Services.ImageUrlExtractor;
 
-public partial class ImageUrlExtractor : IImageUrlExtractor
+public class ImageUrlExtractor : IImageUrlExtractor
 {
     public List<string> Extract(string html)
     {
@@ -25,10 +24,13 @@ public partial class ImageUrlExtractor : IImageUrlExtractor
 
     public bool IsValidUrl(string url)
     {
-        return Uri.TryCreate(url, UriKind.Absolute, out Uri uriResult)
+        return Uri.TryCreate(url, UriKind.Absolute, out Uri? uriResult)
                && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
     }
 
-    [GeneratedRegex("<img.+?src=[\"'](.+?)[\"'].*?>")]
-    private static partial Regex ImageUrlRegex();
+    private static Regex ImageUrlRegex()
+    {
+        string pattern = @"<img.+?src=[\'](.+?)[\'].*?>";
+        return new Regex(pattern);
+    }
 }
