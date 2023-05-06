@@ -1,5 +1,4 @@
 ﻿using Amazon.Rekognition.Model;
-using ImageAnalyzer.Api.Services.ImageProcesor;
 
 namespace ImageAnalyzer.Api.Services.AmazonRekognition.Extensions;
 

@@ -1,5 +1,4 @@
-﻿using ImageAnalyzer.Api.Api;
-using System.Net;
+﻿using System.Net;
 
 namespace ImageAnalyzer.Api.Extensions;
 

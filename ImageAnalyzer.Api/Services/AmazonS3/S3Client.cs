@@ -1,5 +1,4 @@
 ﻿using Amazon.S3;
-using ImageAnalyzer.Api.Services.AmazonS3.Interfaces;
 
 namespace ImageAnalyzer.Api.Services.AmazonS3;
 

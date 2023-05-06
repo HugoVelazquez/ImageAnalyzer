@@ -1,17 +1,4 @@
-﻿using ImageAnalyzer.Api.Configurations.Interfaces;
-using ImageAnalyzer.Api.Services.AmazonRekognition;
-using ImageAnalyzer.Api.Services.AmazonRekognition.Interfaces;
-using ImageAnalyzer.Api.Services.AmazonS3;
-using ImageAnalyzer.Api.Services.AmazonS3.Interfaces;
-using ImageAnalyzer.Api.Services.ImageAnalysis;
-using ImageAnalyzer.Api.Services.ImageAnalysis.Interfaces;
-using ImageAnalyzer.Api.Services.ImageDownload;
-using ImageAnalyzer.Api.Services.ImageDownload.Interfaces;
-using ImageAnalyzer.Api.Services.ImageProcesor;
-using ImageAnalyzer.Api.Services.ImageProcesor.Interfaces;
-using ImageAnalyzer.Api.Services.ImageUrlExtractor.Interfaces;
-
-namespace ImageAnalyzer.Api.Configurations;
+﻿namespace ImageAnalyzer.Api.Configurations;
 
 public static class ServiceConfiguration
 {

@@ -1,7 +1,4 @@
-﻿using ImageAnalyzer.Api.Api;
-using ImageAnalyzer.Api.Features.Analysis.Responses;
-
-namespace ImageAnalyzer.Api.Features.Analysis.Commands.AnalyzeHtml;
+﻿namespace ImageAnalyzer.Api.Features.Analysis.Commands.AnalyzeHtml;
 
 public partial class AnalyzeHtmlCommand
 {

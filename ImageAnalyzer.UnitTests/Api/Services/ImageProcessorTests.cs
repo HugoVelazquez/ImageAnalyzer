@@ -1,10 +1,4 @@
-﻿using ImageAnalyzer.Api.Configurations.Interfaces;
-using ImageAnalyzer.Api.Services.AmazonRekognition.Interfaces;
-using ImageAnalyzer.Api.Services.AmazonS3.Interfaces;
-using ImageAnalyzer.Api.Services.ImageDownload.Interfaces;
-using ImageAnalyzer.Api.Services.ImageProcesor.Enums;
-
-namespace ImageAnalyzer.UnitTests.Api.Services;
+﻿namespace ImageAnalyzer.UnitTests.Api.Services;
 
 public class ImageProcessorTests
 {

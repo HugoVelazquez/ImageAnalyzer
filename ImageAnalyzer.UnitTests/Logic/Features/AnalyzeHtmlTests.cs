@@ -1,10 +1,4 @@
-﻿using ImageAnalyzer.Api.Services.ImageAnalysis.Interfaces;
-using ImageAnalyzer.Api.Services.ImageProcesor;
-using ImageAnalyzer.Api.Services.ImageProcesor.Enums;
-using ImageAnalyzer.Api.Services.ImageProcesor.Interfaces;
-using ImageAnalyzer.Api.Services.ImageUrlExtractor.Interfaces;
-
-namespace ImageAnalyzer.UnitTests.Logic.Features;
+﻿namespace ImageAnalyzer.UnitTests.Logic.Features;
 
 public class AnalyzeHtmlTests
 {

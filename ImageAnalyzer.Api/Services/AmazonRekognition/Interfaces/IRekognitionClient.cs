@@ -1,7 +1,4 @@
-﻿using ImageAnalyzer.Api.Services.AmazonS3.Interfaces;
-using ImageAnalyzer.Api.Services.ImageProcesor.Interfaces;
-
-namespace ImageAnalyzer.Api.Services.AmazonRekognition.Interfaces;
+﻿namespace ImageAnalyzer.Api.Services.AmazonRekognition.Interfaces;
 
 public interface IRekognitionClient
 {

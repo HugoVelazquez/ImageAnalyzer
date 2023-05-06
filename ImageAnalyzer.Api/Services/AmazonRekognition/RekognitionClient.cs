@@ -1,9 +1,5 @@
 ﻿using Amazon.Rekognition;
 using Amazon.Rekognition.Model;
-using ImageAnalyzer.Api.Services.AmazonRekognition.Extensions;
-using ImageAnalyzer.Api.Services.AmazonRekognition.Interfaces;
-using ImageAnalyzer.Api.Services.AmazonS3.Interfaces;
-using ImageAnalyzer.Api.Services.ImageProcesor.Interfaces;
 
 namespace ImageAnalyzer.Api.Services.AmazonRekognition;
 
