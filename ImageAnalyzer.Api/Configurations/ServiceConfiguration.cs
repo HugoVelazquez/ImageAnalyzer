@@ -17,6 +17,7 @@ public static class ServiceConfiguration
 {
     public static IServiceCollection AddOperationsLogic(this IServiceCollection services, IAppConfiguration config)
     {
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
         services.AddSingleton(_ => config);
         services.AddAmazonS3(config!.Amazon!);
         services.AddAmazonRekognition(config!.Amazon!);

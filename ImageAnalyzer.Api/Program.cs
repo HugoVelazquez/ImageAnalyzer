@@ -38,7 +38,7 @@ builder.Services.AddSwaggerGen(c =>
         c.AddServer(new OpenApiServer() { Url = baseUrl });
     }
 });
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+
 builder.Services.AddOperationsLogic(appConfig);
 
 var app = builder.Build();
