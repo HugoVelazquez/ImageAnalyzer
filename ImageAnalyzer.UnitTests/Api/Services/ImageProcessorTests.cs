@@ -19,7 +19,7 @@ public class ImageProcessorTests
     public async Task ImageProcessor_GivenNullStream_ShouldReturnNull()
     {
         _imageDownloadClient.Setup(x => x.GetImageStream(It.IsAny<string>(), CancellationToken.None))
-                            .ReturnsAsync((Stream)null);
+                            .ReturnsAsync(value: null);
 
         var service = new ImageProcessor(_imageDownloadClient.Object, _s3Client.Object, _rekognitionClient.Object, _appConfiguration.Object);
 
