@@ -1,31 +1,26 @@
+
 {
-    "AWSEBDockerrunVersion": 3,
-    "containerDefinitions": [
-      {
-        "name": "image-analyzer-api",
-        "image": "image-image-analyzer-api:latest",
-        "essential": true,
-        "memory": 256,
-        "portMappings": [
-          {
-            "hostPort": 80,
-            "containerPort": 80
-          },
-          {
-            "hostPort": 443,
-            "containerPort": 443
-          }
-        ],
-        "environment": [
-          {
-            "name": "AppConfiguration_Amazon_AwsAccessKey",
-            "value": "${AWS_ACCESS_KEY}"
-          },
-          {
-            "name": "AppConfiguration_Amazon_AwsAccessSecret",
-            "value": "${AWS_ACCESS_SECRET}"
-          }
-        ]
-      }
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "image-analyzer-api",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": 80
+        },
+        {
+            "ContainerPort": 443
+        }
+    ],
+    "Environment": [
+        {
+            "Name": "AppConfiguration_Amazon_AwsAccessKey",
+            "Value": "${AWS_ACCESS_KEY}"
+        },
+        {
+            "Name": "AppConfiguration_Amazon_AwsAccessSecret",
+            "Value": "${AWS_ACCESS_SECRET}"
+        }
     ]
-  }
+}
