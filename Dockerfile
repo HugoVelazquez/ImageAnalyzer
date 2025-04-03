@@ -8,7 +8,7 @@ ENV DOTNET_RUNNING_IN_CONTAINER=true
 
 
 # Use the .NET SDK as the build environment
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copy the entire output directory since it contains the published application
