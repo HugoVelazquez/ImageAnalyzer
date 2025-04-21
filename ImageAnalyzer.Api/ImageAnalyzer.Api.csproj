@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AWSSDK.Rekognition" Version="3.7.400.127" />
+    <PackageReference Include="AWSSDK.Rekognition" Version="3.7.400.137" />
     <PackageReference Include="AWSSDK.S3" Version="3.7.416.3" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.14" />
