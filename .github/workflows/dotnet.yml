@@ -36,7 +36,7 @@ jobs:
       run: | 
         cd ${{ github.workspace }}/out 
         zip -r ${{ github.workspace }}/out.zip *
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v5
       with:
         name: upload-file-artifact
         path: ${{ github.workspace }}/out.zip
